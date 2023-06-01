@@ -11,6 +11,7 @@ let movieList = document.querySelector("#movie-list");
 let movieout
 
 let mainDraw = function(keyvalue = Array) {
+  console.log(movieout)
   keyvalue.forEach((a, b) => {
     let { title: name, vote_average: rating, vote_count: vote, overview, poster_path: imgSrc, id } = a
     let temp_html
