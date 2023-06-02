@@ -91,6 +91,7 @@ let listDraw = function(keyvalue = Array) {
         
 let getInput = function() {
   const inputVal = document.getElementById("search-input").value;
+  console.log(inputval)
   return inputVal
 }
 
@@ -106,9 +107,11 @@ let pushButton = function () {
     inputval = getInput()
      movieList.innerHTML=""
 
+     
     movieSearch = movieout.filter(function(item){
       return item.title.match(new RegExp(inputval, "i"))
-    })
+    }) 
+
 
     console.log(movieSearch)
     movieSearch.forEach((a, b) => {
